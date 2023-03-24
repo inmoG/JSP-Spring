@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--  톰캣 버전이 높으면 web.xml은 @WebServlet() 어노테이션으로 대체할 수 있다.  -->
+    <!--    <servlet>-->
+    <!--        &lt;!&ndash;url-pattern의 hs.do로 접속하면 servlet-name을 확인 후-->
+    <!--        servlet-class 경로 kr.web.controller.HelloServlet 로 찾아가 코드를 해석한다.&ndash;&gt;-->
+    <!--        <servlet-name>HelloServlet</servlet-name>-->
+    <!--        <servlet-class>kr.web.controller.HelloServlet</servlet-class>-->
+    <!--    </servlet>-->
+    <!--    <servlet-mapping>-->
+    <!--        <servlet-name>HelloServlet</servlet-name>-->
+    <!--        <url-pattern>hs.do</url-pattern>-->
+    <!--    </servlet-mapping>-->
+</web-app>
+<!-- 배치 서술자 -->
