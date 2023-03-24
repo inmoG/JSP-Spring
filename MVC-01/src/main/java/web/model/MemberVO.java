@@ -5,6 +5,9 @@ package web.model;
 /*
 MemberVO는 바구니이다.
 데이터를 |____|____|____|____| 이런식으로 담기위해서 VO라는 구조가 필요하다.
+MemberVO는 DB에 저장되어 있는 컬럼 값들을 MemberVO에
+통째로 하나씩 담아서 가져오기 위해서 or 자바에서 CRUD를 통해
+DB에 새 데이터를 등록하기 위해서 만든다.
  */
 public class MemberVO {
     private int num;
