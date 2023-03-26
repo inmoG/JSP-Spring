@@ -4,13 +4,14 @@ create table member(
     id varchar(20) not null,
     pass varchar(20) not null,
     name varchar(30) not null,
-    age int not null,``
+    age int not null,
     email varchar(30) not null,
     phone varchar(30) not null
-);
+)
 
 -- 검색
 select * from member;
+
 
 -- 저장
 insert into member(id, pass, name, age, email, phone)

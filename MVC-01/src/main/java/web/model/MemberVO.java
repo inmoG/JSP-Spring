@@ -99,6 +99,7 @@ public class MemberVO {
         this.phone = phone;
     }
 
+    // 디버깅 용
     @Override
     public String toString() {
         return "MemberVO{" +
