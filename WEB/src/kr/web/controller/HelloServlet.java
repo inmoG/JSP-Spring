@@ -1,11 +1,11 @@
 package kr.web.controller;
-
 // JavaEE -> Servlet 골격
-import kr.web.util.Myutil;
 
+
+import kr.web.util.Myutil;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet; // Servlet-api.jar import
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
