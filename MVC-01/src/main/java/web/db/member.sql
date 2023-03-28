@@ -6,7 +6,8 @@ create table member(
     name varchar(30) not null,
     age int not null,
     email varchar(30) not null,
-    phone varchar(30) not null
+    phone varchar(30) not null,
+    unique key(id) -- 중복되는 아이디 방지
 )
 
 -- 검색

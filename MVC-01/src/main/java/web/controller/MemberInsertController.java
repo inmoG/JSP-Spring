@@ -38,12 +38,13 @@ public class MemberInsertController extends HttpServlet {
 //        System.out.println(vo.toString());
         MemberDAO dao = new MemberDAO();
         int result = dao.memberInsert(vo);
-        PrintWriter out = resp.getWriter();
+//        PrintWriter out = resp.getWriter();
         if (result > 0) {
-            // 가입 성공
-            out.println("Insert Success");
+            // 1 -> 가입 성공
+//            out.println("Insert Success"); 다시 회원리스트가 출력되는 페이지로 이동해야 한다. -> (/MVC01/memberList.do) Servlet에서는 절대경로(/MVC01/)입력해줘야 함
+            resp.sendRedirect("/MVC01/memberList.do");
         } else {
-            // 가입 실패
+            // 0 -> 가입 실패 : WAS(Tomcat)에게 예외 객체를 던진다.
             throw new ServletException("Insert Error");
         }
     }

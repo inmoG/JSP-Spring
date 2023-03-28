@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac8f9fca-1c40-4512-ac69-6ce689291c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/controller/MemberInsertController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/controller/MemberContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/controller/MemberDeleteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/controller/MemberListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/MemberInsertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/MemberInsertController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/db/member.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/db/member.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/model/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/model/MemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/MemberVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/member/memberRegister.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member/memberRegister.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
