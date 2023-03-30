@@ -136,6 +136,26 @@ public class MemberDAO {
             dbClose();
         }
         return vo;
+    } // memberContent
+
+    public int memberUpdate(MemberVO vo) {
+        String SQL = "update member set age=?, email=?, phone=? where num=?";
+        int cnt = -1;
+        getConnect();
+        try {
+            ps = conn.prepareStatement(SQL);
+            ps.setInt(1, vo.getAge());
+            ps.setString(2, vo.getEmail());
+            ps.setString(3, vo.getPhone());
+            ps.setInt(4, vo.getNum());
+
+            cnt = ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            dbClose();
+        }
+        return cnt;
     }
 
     public void dbClose() {

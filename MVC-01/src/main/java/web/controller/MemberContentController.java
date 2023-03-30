@@ -32,6 +32,8 @@ public class MemberContentController extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
         out.println("<h2 align='center'>내 정보</h2>");
+        out.println("<form action='memberUpdate.do' method='post'>");
+        out.println("<input type='hidden' name='num' value='" + vo.getNum() + "'>");
         out.println("<table class='table table-bordered'>");
         if (vo != null) {
             // 스트림을 사용해 데이터 전송
@@ -59,23 +61,23 @@ public class MemberContentController extends HttpServlet {
             out.println("<td><input type='text' name='email' value='" + vo.getEmail() + "'/></td>");
             out.println("<td><input type='text' name='phone' value='" + vo.getPhone() + "'/></td>");
             out.println("</tr>");
-            out.println("</tbody>");
-            out.println("<tr>");
-            out.println("<td colspan='7' align='center'>");
-            out.println("<a href='/MVC01/memberList.do'>회원 리스트</a>");
-            out.println("</td>");
-            out.println("</tr>");
         } else {
             out.println("<tr>");
-            out.println("<td colspan='2' align='center'>");
-            out.println("일치하는 회원이 없습니다.");
-            out.println("</td>");
             out.println("<td align='center'>");
-            out.println("<a href='/MVC01/memberList.do'>회원 리스트</a>");
+            out.println("일치하는 회원이 없습니다.");
             out.println("</td>");
             out.println("</tr>");
         }
+        out.println("<tr>");
+        out.println("<td colspan='7' align='center'>");
+        out.println("<input type='submit' value='수정' class='btn btn-success'/>");
+        out.println("<input type='reset' value='취소' class='btn btn-warning'/>");
+        out.println("<a href='/MVC01/memberList.do'><input type='button' value='회원 리스트' class='btn btn-primary'/a>");
+        out.println("</td>");
+        out.println("</tr>");
+        out.println("</tbody>");
         out.println("</table>");
+        out.println("</form>");
         out.println("</body>");
         out.println("</html>");
     }
